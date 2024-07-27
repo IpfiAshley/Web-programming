@@ -1,21 +1,39 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+}
+
 body {
-    background-color: #ABCACF;
+    background-image: url('iStock-1385723548.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; 
 }
 
 header {
-    background-color: #ABCACF;
+    background-color: transparent;
     color: white;
     padding: 10px 0;
     text-align: start;
 }
 
+.logo-social {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 10%;
+}
+
 .logo h1 {
     margin-left: 10%;
     margin-bottom: 0.1%;
-    font-size: px;
+    font-size: 30px;
+    color: white;
+    white-space: nowrap;
 }
 
 .logo h1:hover {
@@ -29,14 +47,39 @@ header {
     color: white;
 }
 
+.social-icons a {
+    background-color: #CBE2E9; 
+    border-radius: 50%; 
+    padding: 12px; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none; 
+    width: 12px; 
+    height: 12px; 
+    text-align: center;
+}
+
+.social-icons a:hover {
+    background-color: #21B2A6; /* Background color on hover */
+    color: white; /* Color of the icon on hover */
+}
+
+.social-icons a {
+    color: #21B2A6;
+    font-size: 15px;
+    text-decoration: none;
+}
 .menu {
+    background-color: white;
     list-style-type: none;
-    margin-left: 10%;
+    margin-left: 12.5%;
     margin-right: 10%;
     padding: 1%;
     display: flex;
-    background-color: #AECED3;/* Light background color */
-    justify-content: space-around; /* Evenly space out menu items */
+    justify-content: space-around; 
+    background-color: #AECED3; 
+    opacity: 0.3;
   }
 
 nav ul {
