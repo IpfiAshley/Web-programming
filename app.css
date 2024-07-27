@@ -1,15 +1,43 @@
 body {
+    background-color: #ABCACF;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #ABCACF;
     color: white;
     padding: 10px 0;
-    text-align: center;
+    text-align: start;
 }
+
+.logo h1 {
+    margin-left: 10%;
+    margin-bottom: 0.1%;
+    font-size: px;
+}
+
+.logo h1:hover {
+    color: #21B2A6; 
+}
+
+.logo p {
+    margin-left: 10%;
+    margin-top: 0%;
+    font-size: 18px;
+    color: white;
+}
+
+.menu {
+    list-style-type: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1%;
+    display: flex;
+    background-color: #AECED3;/* Light background color */
+    justify-content: space-around; /* Evenly space out menu items */
+  }
 
 nav ul {
     list-style-type: none;
@@ -28,6 +56,10 @@ nav ul li a {
 
 main {
     padding: 20px;
+}
+
+.menu li {
+    display: inline;
 }
 
 #search-section, #course-details {
