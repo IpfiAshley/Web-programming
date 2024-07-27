@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: '2 Years',
             description: 'An intermediate course for IT professionals.',
             modules: [
-                { name: 'Software Engineering', lecturer: 'Alice Brown', venue: 'Room 201', video: 'https://www.youtube.com/embed/example3', guide: 'path/to/study-guide3.pdf' },
-                { name: 'Database Systems', lecturer: 'Bob White', venue: 'Room 202', video: 'https://www.youtube.com/embed/example4', guide: 'path/to/study-guide4.pdf' }
+                { name: 'Software Engineering', lecturer: 'Alice Brown', venue: 'Phi', video: 'https://www.youtube.com/embed/example3', guide: 'path/to/study-guide3.pdf' },
+                { name: 'Database Systems', lecturer: 'Bob White', venue: 'Lambda', video: 'https://www.youtube.com/embed/example4', guide: 'path/to/study-guide4.pdf' }
             ]
         },
         {
@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: '3 Years',
             description: 'A comprehensive course for advanced IT studies.',
             modules: [
-                { name: 'Advanced Programming', lecturer: 'Carol Black', venue: 'Room 301', video: 'https://www.youtube.com/embed/example5', guide: 'path/to/study-guide5.pdf' },
-                { name: 'Network Security', lecturer: 'Dave Green', venue: 'Room 302', video: 'https://www.youtube.com/embed/example6', guide: 'path/to/study-guide6.pdf' }
+                { name: 'Advanced Programming', lecturer: 'Carol Black', venue: 'Omnikron', video: 'https://www.youtube.com/embed/example5', guide: 'path/to/study-guide5.pdf' },
+                { name: 'Network Security', lecturer: 'Dave Green', venue:  'Brussels', video: 'https://www.youtube.com/embed/example6', guide: 'path/to/study-guide6.pdf' }
             ]
         },
         {
@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: '3 Years',
             description: 'A broad course covering business and commerce subjects.',
             modules: [
-                { name: 'Financial Accounting', lecturer: 'Eve Red', venue: 'Room 401', video: 'https://www.youtube.com/embed/example7', guide: 'path/to/study-guide7.pdf' },
-                { name: 'Marketing Management', lecturer: 'Frank Blue', venue: 'Room 402', video: 'https://www.youtube.com/embed/example8', guide: 'path/to/study-guide8.pdf' }
+                { name: 'Financial Accounting', lecturer: 'Eve Red', venue: 'Genk', video: 'https://www.youtube.com/embed/example7', guide: 'path/to/study-guide7.pdf' },
+                { name: 'Marketing Management', lecturer: 'Frank Blue', venue: 'Liege', video: 'https://www.youtube.com/embed/example8', guide: 'path/to/study-guide8.pdf' }
             ]
         }
     ];
