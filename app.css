@@ -71,60 +71,112 @@ header {
     text-decoration: none;
 }
 .menu {
-    background-color: white;
     list-style-type: none;
     margin-left: 12.5%;
     margin-right: 10%;
     padding: 1%;
     display: flex;
-    justify-content: space-around; 
-    background-color: #AECED3; 
-    opacity: 0.3;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.2); 
+    overflow: hidden;
   }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 50px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Change color when the link is clicked or active */
+nav ul li a:active, nav ul li a:focus, nav ul li a:hover {
+    color: #21B2A6; 
 }
 
 main {
     padding: 20px;
+    max-width: 600px;
+    margin-top: 10%;
+    margin-left: 7.5%;
+    margin-bottom: 10%;
 }
 
 .menu li {
     display: inline;
 }
 
+.welcome-heading { 
+    font-size: 15px; 
+    margin-left: 10%;
+    color: #f1f5f6; 
+    font-weight: bold;
+}
+
+.intro-text { 
+    margin-left: 10%;
+    margin-top: 10px; 
+    margin-bottom: 0;
+    color: white; 
+    font-size: 40px; 
+    font-weight: 900;
+}
+
+.sub-intro-text { 
+    margin-top: 20px; 
+    margin-left: 10%;
+    color: #f1f5f6;
+}
+
 #search-section, #course-details {
-    margin-bottom: 20px;
+    color: white;
+    margin-bottom: 200px;
+    margin-left: 10%;
+}
+
+#search-section {
+    margin-bottom: 0;
+}
+
+#course-details {
+    margin-top: -5px;
+}
+
+#search-section h2, #course-details h2 {
+    color: #21B2A6;
+    font-size: 16px; /* Reduced font size for headings */
 }
 
 #search-bar {
-    width: 80%;
+    width: 50%;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #21B2A6;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #CBE2E9;
 }
 
 #course-list article {
@@ -138,4 +190,6 @@ button:hover {
     border: 1px solid #ccc;
     padding: 10px;
     margin-top: 20px;
+    background-color: white;;
+    border-radius: 5px;
 }
