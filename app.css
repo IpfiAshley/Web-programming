@@ -47,6 +47,40 @@ header {
     color: white;
 }
 
+.contact-info {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-right: 20px;
+}
+
+.time-phone {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.time-phone i {
+    font-size: 30px; /* Adjust size for icon */
+    margin-right: 10px;
+    margin-left: 40px;
+    color: white;
+}
+
+.time-details, .phone-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-details span:first-child, .phone-details span:first-child {
+    font-size: 16px; /* Font size for "Monday - Friday" and "Contact Us" */
+}
+
+.time-details span:last-child, .phone-details span:last-child {
+    font-size: 16px; /* Font size for "08:00-17:00" and phone number */
+}
+
 .social-icons a {
     background-color: #CBE2E9; 
     border-radius: 50%; 
@@ -98,9 +132,10 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 10px 15px; 
+    display: block;
 }
 
-/* Change color when the link is clicked or active */
 nav ul li a:active, nav ul li a:focus, nav ul li a:hover {
     color: #21B2A6; 
 }
@@ -108,7 +143,7 @@ nav ul li a:active, nav ul li a:focus, nav ul li a:hover {
 main {
     padding: 20px;
     max-width: 600px;
-    margin-top: 10%;
+    margin-top: 8%;
     margin-left: 7.5%;
     margin-bottom: 10%;
 }
@@ -140,7 +175,7 @@ main {
 }
 
 #search-section, #course-details {
-    color: white;
+    color: rgb(0, 0, 0);
     margin-bottom: 200px;
     margin-left: 10%;
 }
