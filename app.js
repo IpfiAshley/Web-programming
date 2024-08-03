@@ -6,33 +6,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const courses = [
         {
-            title: 'Diploma in IT (DIT)',
+            title: 'Diploma in Information Technology (DIT)',
             code: 'DIT101',
             duration: '2 Years',
             description: 'An intermediate course for IT professionals.',
             modules: [
-                { name: 'Software Engineering', lecturer: 'Alice Brown', venue: 'Room 201', video: 'https://www.youtube.com/embed/example3', guide: 'path/to/study-guide3.pdf' },
-                { name: 'Database Systems', lecturer: 'Bob White', venue: 'Room 202', video: 'https://www.youtube.com/embed/example4', guide: 'path/to/study-guide4.pdf' }
+                { name: 'Software Engineering 261', lecturer: 'Ayanda Ndlovu', venue: 'Ubuntu Lecture Theatre', video: 'https://www.youtube.com/embed/example3', guide: 'path/to/study-guide3.pdf' },
+                { name: 'Database Systems 261', lecturer: 'Zanele Mbatha', venue: 'Charles Babbage Hall', video: 'https://www.youtube.com/embed/example4', guide: 'path/to/study-guide4.pdf' }
             ]
         },
         {
-            title: 'Bachelor\'s in IT (BIT)',
+            title: 'Bachelor of Information Technology (BIT)',
             code: 'BIT201',
             duration: '3 Years',
-            description: 'A comprehensive course for advanced IT studies.',
+            description: 'A advanced course in Software Engineering/Data Analytics.',
             modules: [
-                { name: 'Advanced Programming', lecturer: 'Carol Black', venue: 'Room 301', video: 'https://www.youtube.com/embed/example5', guide: 'path/to/study-guide5.pdf' },
-                { name: 'Network Security', lecturer: 'Dave Green', venue: 'Room 302', video: 'https://www.youtube.com/embed/example6', guide: 'path/to/study-guide6.pdf' }
+                { name: 'Software Engineering 371', lecturer: 'Lerato Molefe', venue: 'Ada Lovelace Hall', video: 'https://www.youtube.com/embed/example5', guide: 'path/to/study-guide5.pdf' },
+                { name: 'Data Analytics 371', lecturer: 'Kabelo Dlamini', venue: 'Grace Hopper Theatre', video: 'https://www.youtube.com/embed/example6', guide: 'path/to/study-guide6.pdf' }
             ]
         },
         {
-            title: 'Bachelor of Commerce (BCOM)',
+            title: 'Bachelor of Computing (BCOM)',
             code: 'BCOM301',
             duration: '3 Years',
-            description: 'A broad course covering business and commerce subjects.',
+            description: 'A advanced course in Computer Science/Data Science.',
             modules: [
-                { name: 'Financial Accounting', lecturer: 'Eve Red', venue: 'Room 401', video: 'https://www.youtube.com/embed/example7', guide: 'path/to/study-guide7.pdf' },
-                { name: 'Marketing Management', lecturer: 'Frank Blue', venue: 'Room 402', video: 'https://www.youtube.com/embed/example8', guide: 'path/to/study-guide8.pdf' }
+                { name: 'Software Engineering 381', lecturer: 'Sipho Mthembu', venue: 'Alan Turing Auditorium', video: 'https://www.youtube.com/embed/example7', guide: 'path/to/study-guide7.pdf' },
+                { name: 'Data Science 381', lecturer: 'Thandiwe Khumalo', venue: 'Leibniz Hall', video: 'https://www.youtube.com/embed/example8', guide: 'path/to/study-guide8.pdf' }
             ]
         }
     ];
