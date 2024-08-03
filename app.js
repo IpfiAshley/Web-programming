@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Bachelor of Information Technology (BIT)',
             code: 'BIT201',
             duration: '3 Years',
-            description: 'A advanced course in Software Engineering/Data Analytics.',
+            description: 'An advanced course in Software Engineering/Data Analytics.',
             modules: [
                 { name: 'Software Engineering 371', lecturer: 'Lerato Molefe', venue: 'Ada Lovelace Hall', video: 'https://youtu.be/iIxZrYzJJ7I?si=ZCBowXTMLj_1tBOu', guide: 'https://www.belgiumcampus.ac.za/wp-content/uploads/2022/07/Software-Engineering-371-SEN371.pdf' },
                 { name: 'Data Analytics 371', lecturer: 'Kabelo Dlamini', venue: 'Grace Hopper Theatre', video: 'https://youtu.be/iIxZrYzJJ7I?si=ZCBowXTMLj_1tBOu', guide: 'https://www.belgiumcampus.ac.za/wp-content/uploads/2022/07/Data-Analytics-371-DAL371.pdf' }
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Bachelor of Computing (BCOM)',
             code: 'BCOM301',
             duration: '3 Years',
-            description: 'A advanced course in Computer Science/Data Science.',
+            description: 'An advanced course in Computer Science/Data Science.',
             modules: [
                 { name: 'Software Engineering 381', lecturer: 'Sipho Mthembu', venue: 'Alan Turing Auditorium', video: 'https://youtu.be/iIxZrYzJJ7I?si=ZCBowXTMLj_1tBOu', guide: 'https://www.belgiumcampus.ac.za/wp-content/uploads/2023/11/Software-Engineering-381-SEN381.pdf' },
                 { name: 'Data Science 381', lecturer: 'Thandiwe Khumalo', venue: 'Leibniz Hall', video: 'https://youtu.be/iIxZrYzJJ7I?si=ZCBowXTMLj_1tBOu', guide: 'https://www.belgiumcampus.ac.za/wp-content/uploads/2022/07/Data-Science-381-DTS381.pdf' }
