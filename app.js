@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const searchBar = document.getElementById('search-bar');
-    const searchButton = document.getElementById('search-button');
-    const courseList = document.getElementById('course-list');
-    const detailsContent = document.getElementById('details-content');
+    // Get references to HTML elements
+    const searchBar = document.getElementById('search-bar'); // Search input field
+    const searchButton = document.getElementById('search-button'); // Search button
+    const courseList = document.getElementById('course-list'); // Container for the list of courses
+    const detailsContent = document.getElementById('details-content'); // Container for course details
 
+    // Array of course objects
     const courses = [
         {
             title: 'Diploma in Information Technology (DIT)',
@@ -37,10 +39,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
+    // Event listener for search button click
     searchButton.addEventListener('click', () => {
-        const query = searchBar.value.toLowerCase();
-        courseList.innerHTML = '';
+        const query = searchBar.value.toLowerCase(); // Get the search query and convert to lowercase
+        courseList.innerHTML = ''; // Clear the previous search results
+        // Filter courses based on the search query
         const filteredCourses = courses.filter(course => course.title.toLowerCase().includes(query));
+        // Create and display a list of filtered courses
         filteredCourses.forEach(course => {
             const courseArticle = document.createElement('article');
             courseArticle.innerHTML = `
@@ -49,11 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p><strong>Duration:</strong> ${course.duration}</p>
                 <p>${course.description}</p>
             `;
+            // Add click event to display course details
             courseArticle.addEventListener('click', () => displayCourseDetails(course));
-            courseList.appendChild(courseArticle);
+            courseList.appendChild(courseArticle); // Add the article to the course list
         });
     });
     
+    // Function to display course details
     function displayCourseDetails(course) {
         const courseDetails = document.getElementById('course-details');
         courseDetails.style.display = 'block'; // Show the course details section
@@ -76,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>${module.lecturer}</td>
                             <td>${module.venue}</td>
                             <td>
-                                <a href="${module.guide}" download>Download Guide</a>
+                                <a href="${module.guide}" download>Download Study Guide</a>
                                 <br>
                                 <a href="${module.video}" target="_blank">Watch Video</a>
                             </td>
