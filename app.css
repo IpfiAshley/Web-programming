@@ -1,8 +1,10 @@
+/* General styles for html and body */
 html, body {
     height: 100%;
     margin: 0; 
 }
 
+/* Body styles */
 body {
     background-image: url('iStock-1385723548.jpg');
     background-size: cover;
@@ -14,6 +16,7 @@ body {
     overflow-x: hidden; 
 }
 
+/* Header styles */
 header {
     background-color: transparent;
     color: white;
@@ -21,6 +24,7 @@ header {
     text-align: start;
 }
 
+/* Logo and social media container */
 .logo-social {
     display: flex; 
     align-items: center; 
@@ -28,6 +32,7 @@ header {
     padding: 0 10%;
 }
 
+/* Logo heading styles */
 .logo h1 {
     margin-left: 10%;
     margin-bottom: 0.1%;
@@ -36,10 +41,12 @@ header {
     white-space: nowrap;
 }
 
+/* Logo heading hover effect */
 .logo h1:hover {
     color: #21B2A6; 
 }
 
+/* Logo paragraph styles */
 .logo p {
     margin-left: 10%;
     margin-top: 0%;
@@ -47,6 +54,7 @@ header {
     color: white;
 }
 
+/* Contact info container */
 .contact-info {
     display: flex;
     align-items: center;
@@ -54,6 +62,7 @@ header {
     padding-right: 20px;
 }
 
+/* Time and phone details container */
 .time-phone {
     display: flex;
     align-items: center;
@@ -61,6 +70,7 @@ header {
     margin-bottom: 5px;
 }
 
+/* Icon styles within time-phone */
 .time-phone i {
     font-size: 30px; /* Adjust size for icon */
     margin-right: 10px;
@@ -68,19 +78,13 @@ header {
     color: white;
 }
 
+/* Flex container for time and phone details */
 .time-details, .phone-details {
     display: flex;
     flex-direction: column;
 }
 
-.time-details span:first-child, .phone-details span:first-child {
-    font-size: 16px; /* Font size for "Monday - Friday" and "Contact Us" */
-}
-
-.time-details span:last-child, .phone-details span:last-child {
-    font-size: 16px; /* Font size for "08:00-17:00" and phone number */
-}
-
+/* Social media icons styles */
 .social-icons a {
     background-color: #CBE2E9; 
     border-radius: 50%; 
@@ -94,16 +98,20 @@ header {
     text-align: center;
 }
 
+/* Hover effect for social media icons */
 .social-icons a:hover {
     background-color: #21B2A6; /* Background color on hover */
     color: white; /* Color of the icon on hover */
 }
 
+/* Social media icons default color and size */
 .social-icons a {
     color: #21B2A6;
     font-size: 15px;
     text-decoration: none;
 }
+
+/* Navigation menu styles */
 .menu {
     list-style-type: none;
     margin-left: 12.5%;
@@ -113,8 +121,9 @@ header {
     justify-content: flex-start;
     background-color: rgba(255, 255, 255, 0.2); 
     overflow: hidden;
-  }
+}
 
+/* Navigation list styles */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -123,11 +132,13 @@ nav ul {
     align-items: center;
 }
 
+/* Navigation list item styles */
 nav ul li {
     display: inline;
     margin-right: 50px;
 }
 
+/* Navigation links styles */
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -136,10 +147,12 @@ nav ul li a {
     display: block;
 }
 
+/* Navigation link hover and focus effects */
 nav ul li a:active, nav ul li a:focus, nav ul li a:hover {
     color: #21B2A6; 
 }
 
+/* Main content styles */
 main {
     padding: 20px;
     max-width: 600px;
@@ -148,10 +161,7 @@ main {
     margin-bottom: 10%;
 }
 
-.menu li {
-    display: inline;
-}
-
+/* Welcome heading styles */
 .welcome-heading { 
     font-size: 15px; 
     margin-left: 10%;
@@ -159,6 +169,7 @@ main {
     font-weight: bold;
 }
 
+/* Intro text styles */
 .intro-text { 
     margin-left: 10%;
     margin-top: 10px; 
@@ -168,24 +179,28 @@ main {
     font-weight: 900;
 }
 
+/* Sub-intro text styles */
 .sub-intro-text { 
     margin-top: 20px; 
     margin-left: 10%;
     color: #f1f5f6;
 }
 
+/* Search section and course details styles */
 #search-section, #course-details {
     color: rgb(0, 0, 0);
     margin-bottom: 200px;
     margin-left: 10%;
 }
 
+/* Search section styles */
 #search-section {
     margin-bottom: 0;
     display: inline-block;
     width: 75%;
 }
 
+/* Course details section styles */
 #course-details {
     display: none; /* Initially hide the course details section */
     position: absolute;
@@ -194,15 +209,18 @@ main {
     z-index: 1000;
 }
 
+/* Search section heading styles */
 #search-section h2 {
     color: #21B2A6;
-    font-size: 16px; /* Reduced font size for headings */
+    font-size: 16px; 
 }
 
+/* Course details heading styles */
 #course-details h2 {
     display: none;
 }
 
+/* Search bar styles */
 #search-bar {
     width: 50%;
     padding: 10px;
@@ -211,6 +229,7 @@ main {
     border: none;
 }
 
+/* Button styles */
 button {
     padding: 10px 20px;
     background-color: #21B2A6;
@@ -220,10 +239,12 @@ button {
     border-radius: 5px;
 }
 
+/* Button hover effect */
 button:hover {
     background-color: #CBE2E9;
 }
  
+/* Course list article styles */
 #course-list article {
     background-color: #FEFEFE;
     color: grey;
@@ -234,6 +255,7 @@ button:hover {
     cursor: pointer;
 }
 
+/* Course details content styles */
 #details-content {
     border:rgba(255, 255, 255, 0.2);
     color: white; 
@@ -244,11 +266,37 @@ button:hover {
     opacity: 0.7;
 }
 
-/* Chat to Us Icon */
+/* Links inside course details content */
+#details-content a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Heading styles inside course details content */
+#details-content h3 {
+    margin-bottom: 10px;
+    margin-left: 2px;
+}
+
+/* Paragraph styles inside course details content */
+#details-content p {
+    margin: 10px 0;
+}
+
+/* Table header and cell padding inside course details content */
+#details-content th, #details-content td {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    text-align: left;
+    color: white;
+}
+
+/* Chat icon styles */
 .chat-icon {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 50px;
     background-color: #CBE2E9;
     border-radius: 50%;
     padding: 15px;
@@ -258,8 +306,9 @@ button:hover {
     justify-content: center;
 }
 
+/* Chat icon link styles */
 .chat-icon a {
-    color: #333; /* Color of the chat icon */
+    color: #333;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 30px;
 }
