@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: '2 Years',
             description: 'An intermediate course for IT professionals.',
             modules: [
-                { name: 'Software Engineering 261', lecturer: 'Ayanda Ndlovu', venue: 'Ubuntu Lecture Theatre', video: 'https://www.youtube.com/embed/example3', guide: 'path/to/study-guide3.pdf' },
-                { name: 'Database Systems 261', lecturer: 'Zanele Mbatha', venue: 'Charles Babbage Hall', video: 'https://www.youtube.com/embed/example4', guide: 'path/to/study-guide4.pdf' }
+                { name: 'Software Engineering 261', lecturer: 'Ayanda Ndlovu', venue: 'Ubuntu Lecture Theatre', video: 'https://youtu.be/iIxZrYzJJ7I?si=ZCBowXTMLj_1tBOu', guide: 'https://www.belgiumcampus.ac.za/wp-content/uploads/2022/07/Software-Engineering-371-SEN371.pdf' },
+                { name: 'Database Systems 261', lecturer: 'Zanele Mbatha', venue: 'Charles Babbage Hall', video: 'https://youtu.be/iIxZrYzJJ7I?si=ZCBowXTMLj_1tBOu', guide: 'https://www.belgiumcampus.ac.za/wp-content/uploads/2023/11/Enterprise-Systems-261-ERP261.pdf' }
             ]
         },
         {
@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: '3 Years',
             description: 'A advanced course in Software Engineering/Data Analytics.',
             modules: [
-                { name: 'Software Engineering 371', lecturer: 'Lerato Molefe', venue: 'Ada Lovelace Hall', video: 'https://www.youtube.com/embed/example5', guide: 'path/to/study-guide5.pdf' },
-                { name: 'Data Analytics 371', lecturer: 'Kabelo Dlamini', venue: 'Grace Hopper Theatre', video: 'https://www.youtube.com/embed/example6', guide: 'path/to/study-guide6.pdf' }
+                { name: 'Software Engineering 371', lecturer: 'Lerato Molefe', venue: 'Ada Lovelace Hall', video: 'https://youtu.be/iIxZrYzJJ7I?si=ZCBowXTMLj_1tBOu', guide: 'https://www.belgiumcampus.ac.za/wp-content/uploads/2022/07/Software-Engineering-371-SEN371.pdf' },
+                { name: 'Data Analytics 371', lecturer: 'Kabelo Dlamini', venue: 'Grace Hopper Theatre', video: 'https://youtu.be/iIxZrYzJJ7I?si=ZCBowXTMLj_1tBOu', guide: 'https://www.belgiumcampus.ac.za/wp-content/uploads/2022/07/Data-Analytics-371-DAL371.pdf' }
             ]
         },
         {
@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: '3 Years',
             description: 'A advanced course in Computer Science/Data Science.',
             modules: [
-                { name: 'Software Engineering 381', lecturer: 'Sipho Mthembu', venue: 'Alan Turing Auditorium', video: 'https://www.youtube.com/embed/example7', guide: 'path/to/study-guide7.pdf' },
-                { name: 'Data Science 381', lecturer: 'Thandiwe Khumalo', venue: 'Leibniz Hall', video: 'https://www.youtube.com/embed/example8', guide: 'path/to/study-guide8.pdf' }
+                { name: 'Software Engineering 381', lecturer: 'Sipho Mthembu', venue: 'Alan Turing Auditorium', video: 'https://youtu.be/iIxZrYzJJ7I?si=ZCBowXTMLj_1tBOu', guide: 'https://www.belgiumcampus.ac.za/wp-content/uploads/2023/11/Software-Engineering-381-SEN381.pdf' },
+                { name: 'Data Science 381', lecturer: 'Thandiwe Khumalo', venue: 'Leibniz Hall', video: 'https://youtu.be/iIxZrYzJJ7I?si=ZCBowXTMLj_1tBOu', guide: 'https://www.belgiumcampus.ac.za/wp-content/uploads/2022/07/Data-Science-381-DTS381.pdf' }
             ]
         }
     ];
