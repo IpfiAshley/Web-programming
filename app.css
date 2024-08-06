@@ -357,3 +357,56 @@ button:hover {
 #print-course-button:hover {
     background-color: #1a8f87;
 }
+
+
+.about-us-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-us-container h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+.about-us-container section {
+    margin: 20px 0;
+}
+
+.about-us-container h2 {
+    font-size: 1.8em;
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.about-us-container p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .about-us-container {
+        padding: 10px;
+    }
+
+    .about-us-container h1 {
+        font-size: 2em;
+    }
+
+    .about-us-container h2 {
+        font-size: 1.5em;
+    }
+
+    .about-us-container p {
+        font-size: 1em;
+    }
+}
+
