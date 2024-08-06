@@ -291,11 +291,13 @@ button:hover {
     text-align: left;
     color: white;
 }
+
 .enroll-button {
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #21B2A6;
     color: white;
+    font-weight: bold;
     border: none;
     cursor: pointer;
     border-radius: 5px;
