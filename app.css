@@ -325,3 +325,32 @@ button:hover {
     text-decoration: none;
     font-size: 30px;
 }
+/* Add this to style the completed modules section */
+#completed-modules-section {
+    margin-top: 20px;
+}
+
+#completed-modules-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Style the print button */
+#print-course-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #21B2A6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#print-course-button:hover {
+    background-color: #1a8f87;
+}
