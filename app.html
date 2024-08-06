@@ -68,7 +68,17 @@
         <!-- Section for displaying course details -->
         <section id="course-details">
             <h2>Course Details</h2>
-            <div id="details-content"></div> <!-- Placeholder for detailed course information -->
+            <div id="details-content">
+                <!-- Existing content -->
+                <h3>${course.title}</h3>
+                <table>
+                <!-- Table content -->
+                </table>
+                <!-- Enroll button in the course details section -->
+                <button class="enroll-button" onclick="enroll('${course.code}')">Enroll</button>
+                <!-- Back to Courses button -->
+                <button class="back-button" onclick="goBack()">Back to Courses</button>
+            </div>
         </section>
     </main>
 

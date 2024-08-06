@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll in Course</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <main>
+        <h1>Enroll in Course</h1>
+        <form id="enroll-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="course-code">Course Code:</label>
+            <input type="text" id="course-code" name="course-code" readonly>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="countdown"></div>
+        <button onclick="goBack()">Back to Course List</button>
+    </main>
+    <script src="enroll.js"></script>
+</body>
+</html>
