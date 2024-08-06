@@ -328,6 +328,8 @@ button:hover {
 /* Add this to style the completed modules section */
 #completed-modules-section {
     margin-top: 20px;
+    color: white;
+    
 }
 
 #completed-modules-list {
