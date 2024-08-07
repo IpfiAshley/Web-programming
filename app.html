@@ -44,13 +44,11 @@
         <!-- Navigation menu with links to different sections of the page -->
         <nav>
             <ul class="menu">
-                <li><a href="#app.html">Home</a></li>
-                <li><a href="#search-section">Qualifications</a></li>
-                <li><a href="#course-details">Study at BC</a></li>
-                <li class="cta"><a href="about.html">About Us</a></li>
+                <li><a href="app.html">Home</a></li>
+                <li><a href="Course.html">Qualifications</a></li>
+                <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
-        </div>
     </header>
     <main>
         <!-- Main content of the page -->
@@ -72,21 +70,12 @@
             <div id="details-content">
                 <!-- Existing content -->
                 <h3>${course.title}</h3>
-                <table>
-                <!-- Table content -->
-                </table>
                 <!-- Enroll button in the course details section -->
                 <button class="enroll-button" onclick="enroll('${course.code}')">Enroll</button>
                 <!-- Back to Courses button -->
                 <button class="back-button" onclick="goBack()">Back to Courses</button>
             </div>
         </section>
-        <div id="completed-modules-section">
-            <h2>Completed Modules</h2>
-            <ul id="completed-modules-list"></ul>
-        </div>
-        
-        <button id="print-course-button">Print Course</button>
     </main>
 
     <!-- Link to external JavaScript file for functionality -->
