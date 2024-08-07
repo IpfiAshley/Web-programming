@@ -6,7 +6,7 @@ html, body {
 
 /* Body styles */
 body {
-    background-image: url('iStock-1385723548.jpg');
+    background-image: url('iStock-1187135109.jpg');
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@ body {
 /* Header styles */
 header {
     background-color: transparent;
-    color: white;
+    color: black;
     padding: 10px 0;
     text-align: start;
 }
@@ -37,7 +37,7 @@ header {
     margin-left: 10%;
     margin-bottom: 0.1%;
     font-size: 30px;
-    color: white;
+    color: black;
     white-space: nowrap;
 }
 
@@ -51,14 +51,14 @@ header {
     margin-left: 10%;
     margin-top: 0%;
     font-size: 18px;
-    color: white;
+    color: black;
 }
 
 /* Contact info container */
 .contact-info {
     display: flex;
     align-items: center;
-    color: white;
+    color: black;
     padding-right: 20px;
 }
 
@@ -75,7 +75,7 @@ header {
     font-size: 30px; /* Adjust size for icon */
     margin-right: 10px;
     margin-left: 40px;
-    color: white;
+    color: black;
 }
 
 /* Flex container for time and phone details */
@@ -101,7 +101,7 @@ header {
 /* Hover effect for social media icons */
 .social-icons a:hover {
     background-color: #21B2A6; /* Background color on hover */
-    color: white; /* Color of the icon on hover */
+    color: black; /* Color of the icon on hover */
 }
 
 /* Social media icons default color and size */
@@ -119,7 +119,8 @@ header {
     padding: 1%;
     display: flex;
     justify-content: flex-start;
-    background-color: rgba(255, 255, 255, 0.2); 
+    background-color: rgb(244, 243, 243);
+    opacity: 0.5;
     overflow: hidden;
 }
 
@@ -141,7 +142,7 @@ nav ul li {
 /* Navigation links styles */
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: bold;
     padding: 10px 15px; 
     display: block;
@@ -165,7 +166,7 @@ main {
 .welcome-heading { 
     font-size: 15px; 
     margin-left: 10%;
-    color: #f1f5f6; 
+    color: black; 
     font-weight: bold;
 }
 
@@ -174,7 +175,7 @@ main {
     margin-left: 10%;
     margin-top: 10px; 
     margin-bottom: 0;
-    color: white; 
+    color: black; 
     font-size: 40px; 
     font-weight: 900;
 }
@@ -183,7 +184,7 @@ main {
 .sub-intro-text { 
     margin-top: 20px; 
     margin-left: 10%;
-    color: #f1f5f6;
+    color: black;
 }
 
 /* Search section and course details styles */
@@ -226,7 +227,7 @@ main {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: none;
+    border: solid;
 }
 
 /* Button styles */
@@ -258,17 +259,18 @@ button:hover {
 /* Course details content styles */
 #details-content {
     border:rgba(255, 255, 255, 0.2);
-    color: white; 
+    color: black; 
     padding: 10px;
     margin-top: 20px;
-    background-color: #21B2A6;
+    background-color: rgb(244, 243, 243);
+    opacity: 0.5;
     border-radius: 5px;
     opacity: 0.7;
 }
 
 /* Links inside course details content */
 #details-content a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -289,7 +291,7 @@ button:hover {
     padding-right: 20px;
     padding-bottom: 3px;
     text-align: left;
-    color: white;
+    color: blacl;
 }
 
 .enroll-button {
