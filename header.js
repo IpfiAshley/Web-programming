@@ -1,4 +1,3 @@
-// header.js
 function loadHeader() {
     const headerHTML = `
     <header>
