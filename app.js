@@ -50,54 +50,63 @@ document.addEventListener('DOMContentLoaded', () => {
             const courseArticle = document.createElement('article');
             courseArticle.innerHTML = `
                 <h3>${course.title}</h3>
-                <p><strong>Course Code:</strong> ${course.code}</p>
-                <p><strong>Duration:</strong> ${course.duration}</p>
-                <p>${course.description}</p>
+                <button onclick="viewCourse('${course.code}')">View Course</button>
             `;
-            // Add click event to display course details
-            courseArticle.addEventListener('click', () => displayCourseDetails(course));
-            courseList.appendChild(courseArticle); // Add the article to the course list
+            courseList.appendChild(courseArticle);
         });
     });
     
     // Function to display course details
-    function displayCourseDetails(course) {
-        const courseDetails = document.getElementById('course-details');
-        courseDetails.style.display = 'block'; // Show the course details section
-        const detailsContent = document.getElementById('details-content');
-        detailsContent.innerHTML = `
-            <h3>${course.title}</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Module</th>
-                        <th>Lecturer</th>
-                        <th>Venue</th>
-                        <th>Resources</th>
-                    </tr>
-                </thead>
-                <tbody>
+    // Function to view course details
+    window.viewCourse = function (courseCode) {
+        const course = courses.find(course => course.code === courseCode); // Find the course by its code
+        if (course) {
+            detailsContent.innerHTML = `
+                <h3>${course.title}</h3>
+                <p>Duration: ${course.duration}</p>
+                <p>${course.description}</p>
+                <ul>
                     ${course.modules.map(module => `
-                        <tr>
-                            <td>${module.name}</td>
-                            <td>${module.lecturer}</td>
-                            <td>${module.venue}</td>
-                            <td>
-                                <a href="${module.guide}" download>Download Study Guide</a>
-                                <br>
-                                <a href="${module.video}" target="_blank">Watch Video</a>
-                            </td>
-                        </tr>
+                        <li>
+                            ${module.name} - ${module.lecturer} - ${module.venue}
+                            <br><a href="${module.video}" target="_blank">Watch Lecture</a> | <a href="${module.guide}" target="_blank">Study Guide</a>
+                            <button onclick="markAsCompleted('${module.name}')">Mark as Completed</button>
+                        </li>
                     `).join('')}
-                </tbody>
-            </table>
-            <!-- Enroll button in the course details section -->
-            <button class="enroll-button" onclick="enroll('${course.code}')">Enroll</button>
-        `;
-    }
+                </ul>
+                <button class="enroll-button" onclick="enroll('${course.code}')">Enroll</button>
+                <button class="back-button" onclick="goBack()">Back to Courses</button>
+                <button id="print-course-button" onclick="printCourse()">Print Course</button>
+                <h3>Completed Modules</h3>
+                <ul id="completed-modules-list"></ul>
+            `;
+            document.getElementById('course-details').style.display = 'block';
+        }
+    };
+
+        // Function to go back to the list of courses
+        window.goBack = function () {
+            courseList.innerHTML = '';
+            searchBar.value = '';
+            detailsContent.innerHTML = '';
+            document.getElementById('course-details').style.display = 'none';
+        };
 
     // Function to redirect to enroll page with course code as query parameter
     window.enroll = function(courseCode) {
         window.location.href = `enroll.html?courseCode=${courseCode}`;
     };
+
+// Function to mark a module as completed
+window.markAsCompleted = function (moduleName) {
+    const completedModules = document.getElementById('completed-modules-list');
+    const completedItem = document.createElement('li');
+    completedItem.textContent = moduleName;
+    completedModules.appendChild(completedItem);
+};
+
+// Function to print the course details
+window.printCourse = function () {
+    window.print();
+};
 });

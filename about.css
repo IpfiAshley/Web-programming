@@ -70,7 +70,7 @@ header {
     font-size: 30px; /* Adjust size for icon */
     margin-right: 10px;
     margin-left: 40px;
-    color: black;
+
 }
 
 /* Flex container for time and phone details */
@@ -202,8 +202,4 @@ main {
     .about-us-container p {
         font-size: 1em;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f3d0d5460ef1fd719979e62d4a7e8c75f384e071

@@ -74,12 +74,15 @@
                 <button class="enroll-button" onclick="enroll('${course.code}')">Enroll</button>
                 <!-- Back to Courses button -->
                 <button class="back-button" onclick="goBack()">Back to Courses</button>
+                <!-- Print button -->
+                <button id="print-course-button">Print Course</button>
+                <!-- Completed modules section -->
+                <h3>Completed Modules</h3>
+                <ul id="completed-modules-list"></ul>
             </div>
         </section>
     </main>
 
-    <!-- Link to external JavaScript file for functionality -->
-    <script src="app.js"></script>
 
     <!-- Chat icon with link to chat service -->
     <div class="chat-icon">
@@ -87,5 +90,18 @@
             <i class="fas fa-comment"></i> <!-- Chat icon -->
         </a>
     </div>
+
+    <footer>
+        <!-- Footer section containing additional links and information -->
+        <div class="footer-links">
+            <a href="about.html">Privacy Policy</a>
+            <a href="about.html">Terms of Service</a>
+            <a href="about.html">Support</a>
+        </div>
+        <!-- Copyright information -->
+        <p>&copy; 2023 Belgium Campus ITversity. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
