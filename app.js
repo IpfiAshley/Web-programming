@@ -94,10 +94,64 @@ document.addEventListener('DOMContentLoaded', () => {
             <!-- Enroll button in the course details section -->
             <button class="enroll-button" onclick="enroll('${course.code}')">Enroll</button>
         `;
+        // Add event listeners to "Mark as Completed" buttons
+    document.querySelectorAll('.complete-button').forEach(button => {
+        button.addEventListener('click', (event) => {
+            const courseCode = event.target.getAttribute('data-course');
+            const moduleIndex = event.target.getAttribute('data-module');
+            markAsCompleted(courseCode, moduleIndex);
+        });
+    });
+
+    // Update completed modules list
+    updateCompletedModules();
     }
+    const printCourseButton = document.getElementById('print-course-button');
+    printCourseButton.addEventListener('click', () => {
+        window.print();
+    });
 
     // Function to redirect to enroll page with course code as query parameter
     window.enroll = function(courseCode) {
         window.location.href = `enroll.html?courseCode=${courseCode}`;
     };
+<<<<<<< HEAD
 });
+=======
+});
+
+// Function to mark a module as completed
+function markAsCompleted(courseCode, moduleIndex) {
+    const course = courses.find(c => c.code === courseCode);
+    if (course) {
+        const module = course.modules[moduleIndex];
+        module.completed = !module.completed; // Toggle completion status
+
+        // Update UI
+        const row = document.querySelector(`[data-course="${courseCode}"][data-module="${moduleIndex}"]`).parentElement.parentElement;
+        if (module.completed) {
+            row.classList.add('completed');
+        } else {
+            row.classList.remove('completed');
+        }
+
+        // Update completed modules list
+        updateCompletedModules();
+    }
+}
+
+// Function to update the completed modules list
+function updateCompletedModules() {
+    const completedModulesList = document.getElementById('completed-modules-list');
+    completedModulesList.innerHTML = ''; // Clear current list
+    courses.forEach(course => {
+        course.modules.forEach(module => {
+            if (module.completed) {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${module.name} (${course.title})`;
+                completedModulesList.appendChild(listItem);
+            }
+        });
+    });
+}
+>>>>>>> f3d0d5460ef1fd719979e62d4a7e8c75f384e071
