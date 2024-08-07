@@ -344,3 +344,42 @@ button:hover {
     text-decoration: none;
     font-size: 30px;
 };
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+    /* Footer styling */
+    footer {
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+    }
+
+    /* Footer links styling */
+    .footer-links {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        margin-left: 10px;
+        text-decoration: none;
+        color: #21B2A6;
+    }
+
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+
+    /* Copyright information styling */
+    footer p {
+        margin: 0;
+    }
