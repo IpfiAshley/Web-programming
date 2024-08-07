@@ -8,7 +8,6 @@ html, body {
 body {
     background-image: url('iStock-1385723548.jpg');
     background-size: cover;
-    background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
@@ -292,11 +291,13 @@ button:hover {
     text-align: left;
     color: white;
 }
+
 .enroll-button {
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #21B2A6;
     color: white;
+    font-weight: bold;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -326,87 +327,3 @@ button:hover {
     text-decoration: none;
     font-size: 30px;
 }
-/* Add this to style the completed modules section */
-#completed-modules-section {
-    margin-top: 20px;
-    color: white;
-    
-}
-
-#completed-modules-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.completed {
-    text-decoration: line-through;
-    color: gray;
-}
-
-/* Style the print button */
-#print-course-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #21B2A6;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#print-course-button:hover {
-    background-color: #1a8f87;
-}
-
-
-.about-us-container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.about-us-container h1 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #2c3e50;
-}
-
-.about-us-container section {
-    margin: 20px 0;
-}
-
-.about-us-container h2 {
-    font-size: 1.8em;
-    color: #2980b9;
-    border-bottom: 2px solid #2980b9;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-
-.about-us-container p {
-    font-size: 1.1em;
-    margin: 10px 0;
-    text-align: justify;
-}
-
-@media (max-width: 768px) {
-    .about-us-container {
-        padding: 10px;
-    }
-
-    .about-us-container h1 {
-        font-size: 2em;
-    }
-
-    .about-us-container h2 {
-        font-size: 1.5em;
-    }
-
-    .about-us-container p {
-        font-size: 1em;
-    }
-}
-
