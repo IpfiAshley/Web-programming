@@ -91,6 +91,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     `).join('')}
                 </tbody>
             </table>
+            <!-- Enroll button in the course details section -->
+            <button class="enroll-button" onclick="enroll('${course.code}')">Enroll</button>
         `;
     }
+
+    // Function to redirect to enroll page with course code as query parameter
+    window.enroll = function(courseCode) {
+        window.location.href = `enroll.html?courseCode=${courseCode}`;
+    };
 });
