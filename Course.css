@@ -1,0 +1,326 @@
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #21B2A6;    
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: transparent;
+    color: black;
+    padding: 10px 0;
+    text-align: start;
+}
+
+/* Logo and social media container */
+.logo-social {
+    color: #1f242d;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 10%;
+}
+
+/* Logo heading styles */
+.logo h1 {
+    margin-left: 10%;
+    margin-bottom: 0.1%;
+    font-size: 30px;
+    color: black;
+    white-space: nowrap;
+}
+
+/* Logo heading hover effect */
+.logo h1:hover {
+    color: #21B2A6; 
+}
+
+/* Logo paragraph styles */
+.logo p {
+    margin-left: 10%;
+    margin-top: 0%;
+    font-size: 18px;
+    color: black;
+}
+
+/* Contact info container */
+.contact-info {
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-right: 20px;
+}
+
+/* Time and phone details container */
+.time-phone {
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+/* Icon styles within time-phone */
+.time-phone i {
+    color: black;
+    font-size: 30px; /* Adjust size for icon */
+    margin-right: 10px;
+    margin-left: 40px;
+    color: black;
+}
+
+/* Flex container for time and phone details */
+.time-details, .phone-details {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Social media icons styles */
+.social-icons a {
+    color: black;
+    background-color: #CBE2E9; 
+    border-radius: 50%; 
+    padding: 12px; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none; 
+    width: 12px; 
+    height: 12px; 
+    text-align: center;
+}
+
+/* Hover effect for social media icons */
+.social-icons a:hover {
+    background-color: #21B2A6; /* Background color on hover */
+    color: black; /* Color of the icon on hover */
+}
+
+/* Social media icons default color and size */
+.social-icons a {
+    color: #000;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* Navigation menu styles */
+.menu {
+    list-style-type: none;
+    margin-left: 12.5%;
+    margin-right: 10%;
+    padding: 1%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(244, 243, 243); 
+    overflow: hidden;
+}
+
+/* Navigation list styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation list item styles */
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+/* Navigation links styles */
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px; 
+    display: block;
+}
+
+/* Navigation link hover and focus effects */
+nav ul li a:active, nav ul li a:focus, nav ul li a:hover {
+    color: #21B2A6; 
+}
+
+.coursedetails{
+    background-color: whitesmoke;
+}
+
+#courseImage img{
+    width: 55vw;
+    /* height: 60vw; */
+}
+
+.heading {
+    font-size: 2.35rem;
+    font-weight: bold;
+    margin-left: 40%;
+    transform: translateX(-50%);
+  }
+
+.learn{
+    text-align:left;
+    font-size: 1.1rem;
+}
+
+.over-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2REM;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
+
+.coursedetails h2 {
+    margin-bottom: 5rem;
+}
+
+#courseinfo h3{
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+#courseinfo p{
+    font-size: 1rem;
+    padding-bottom: 1.5rem ;
+}
+/* .Btn{
+    background: var(--main-color);
+    border: 1rem solid var(--main-color);
+    color: var(--second-bg-color);
+    border-radius: 100px;
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    
+} */
+
+.courseinfo .coursebox{
+    flex: 1 1 1rem;
+    background: white;
+    text-align: center;
+    transition: .5 ease;
+    
+}
+
+.courseinfo .coursebox{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.courseinfo h3{
+    font-size: 2rem;
+    color: #21B2A6;
+}
+
+#MoreInfo{
+    display:flex;
+    text-align: center;
+    margin-left: 35.5vw;
+}
+
+#MoreInfo h3{
+    font-size: 1.8rem;
+}
+
+.QualiCover{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.QualiCover #Qualibox{
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #21B2A6;
+    overflow: hidden;
+    display: flex;
+}
+
+#Qualibox img{
+    width: 100%;
+    transition: .5 ease;
+}
+
+#Qualibox:hover img{
+    transform: scale(1.1);
+}
+
+#Qualibox .QualiDetails{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.1),var(--bg-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+#Qualibox:hover .QualiDetails{
+    transform: translateY(0);
+}
+
+.QualiDetails h4{
+    font-size: 2rem;
+}
+
+.QualiDetails p{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.courses{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.coursedetails{
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.coursesinfo, .description{
+    padding: 2rem;
+    flex: 1;
+}
+
+.coursesinfo{
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    max-width: 300px;
+}
+
+
+.coursedetails h3{
+    font-size: 1.8rem;
+}
+
+.coursedetails h4{
+    font-size: 1.4rem;
+}
+
+.coursedetails p{
+    font-size: 1.2rem;
+}
